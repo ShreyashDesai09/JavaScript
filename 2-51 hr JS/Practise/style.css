@@ -1,0 +1,44 @@
+.modules
+{
+    border: 2px solid green;
+    padding: 20px;
+    width: fit-content;
+    
+}
+button
+{
+    background-color: aqua;
+    color: red;
+    border: 2px solid green;
+    border-radius: 5px;
+    border-style: outset;
+    box-shadow: 2px 2px 20px solid black;
+
+    display: flexbox;
+    
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+    
+}
+
+button:hover
+{
+    
+    animation-name: mybutton;
+    animation-duration: 3s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-play-state: running;
+}
+
+@keyframes mybutton
+{
+    0%{background-color: aqua;}
+    30%{background-color: blue;}
+    60%{background-color:navy}
+    85%{background-color: blue;}
+    100%{background-color: aqua;}
+}
