@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function</title>
+</head>
+<body>
+    ARROW and Callback
+
+    <div>
+        <h1>HELLO</h1>
+    </div>
+
+    <button class="b">BUTTON</button>
+
+    <script>
+        let sum = function (a,b) {
+            return a+b;
+        }
+
+        
+        console.log(sum(5,6))
+
+        let diff = (a,b) => a-b
+
+        
+        function fetchData(callback) {
+            setTimeout( () => {
+                console.log(diff(6,5))
+            },5000);
+        }
+
+        fetchData(diff(6,1))
+
+        let button = document.querySelector("h1")
+
+        button.addEventListener("click", ()=> {
+            button.style.backgroundColor = "Green";
+            button.style.display = "inline-block";
+        })
+
+    </script>
+</body>
+</html>
